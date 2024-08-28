@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+    <!-- Spinner for selecting the chapter -->
+    <Spinner
+        android:id="@+id/chapterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner for selecting the verse -->
+    <Spinner
+        android:id="@+id/verseSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView for displaying the Arabic verse -->
+    <TextView
+        android:id="@+id/arabicTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- TextView for displaying the translation of the verse -->
+    <TextView
+        android:id="@+id/translationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Button to navigate to the previous verse -->
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Verse"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Button to navigate to the next verse -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Verse"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- TextView for displaying the current word -->
+    <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="8dp" />
+    <TextView
+        android:id="@+id/wordTranslationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Button to navigate to the previous word -->
+    <Button
+        android:id="@+id/prevWordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Word"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <!-- Button to navigate to the next word -->
+    <Button
+        android:id="@+id/nextWordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Word"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/startQuizButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verse Quiz"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/startVerseQuizButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter Quiz"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
